@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>introduction to web</title>
+</head>
+
+<body style="background-color:skyblue;">
+<center><u><h1>
+Introduction to Web</h1></u></center>
+
+Web consists of billions of clients and server connected through wires and wireless networks. The web clients make requests to web server. The web server receives the request, finds the resources and return the response to the client. When a server answers a request, it usually sends some type of content to the client. The client uses web browser to send request to the server. The server often sends response to the browser with a set of instructions written in HTML(HyperText Markup Language). All browsers know how to display HTML page to the client.
+<u><h2>
+Introduction to Web</h2></u><br><br>
+<a href="#client">1.Client-sever Concepts</a><br><br>&nbsp;&nbsp;&nbsp;
+<a href="#client1">Client-sever Concepts Image</a><br><br>
+<a href="#components">2.Components of web Application
+</a><br><br>
+<a href="#types">3.Types of web content</a><br><br>
+<a href="#overview">4.Overview of http</a><br><br>
+<a href="#reqres">5.Http request-response</a><br><br>
+<a href="#dynamic">6.Dynamic webpages</a><br><br>
+&nbsp;&nbsp;&nbsp;
+<a href="#dynamic1">Dynamic webpage Image</a><br><br>
+<a href="#appln">7.Application servers</a><br><br>
+<a href="#security">8.Web security</a><br><br>
+<a href="#getvspost">9.Get VS Post</a><br><br>
+<pre><u><h3><div id="client">
+Client-sever Concepts</u></h3>
+
+The client-server model, or client-server architecture, is a distributed application framework dividing tasks between servers and clients, which either reside in the same system or communicate through a computer network or the Internet. The client relies on sending a request to another program in order to access a service made available by a server. The server runs one or more programs that share resources with and distribute work among clients.
+
+The client server relationship communicates in a request–response messaging pattern and must adhere to a common communications protocol, which formally defines the rules, language, and dialog patterns to be used. Client-server communication typically adheres to the TCP/IP protocol suite.
+
+TCP protocol maintains a connection until the client and server have completed the message exchange. TCP protocol determines the best way to distribute application data into packets that networks can deliver, transfers packets to and receives packets from the network, and manages flow control and retransmission of dropped or garbled packets. IP is a connectionless protocol in which each packet traveling through the Internet is an independent unit of data unrelated to any other data units.
+
+Client requests are organized and prioritized in a scheduling system, which helps servers cope in the instance of receiving requests from many distinct clients in a short space of time. The client-server approach enables any general-purpose computer to expand its capabilities by utilizing the shared resources of other hosts. Popular client-server applications include email, the World Wide Web, and network printing.</div>
+<BR>
+<u><h3><div id="client1">
+Client-sever Concepts Image</u></h3>
+<img src="/var/nfs/.home/mcac/mcac23/Downloads.png"></div>
+<u><h3><div id="components">
+Components of web Application</u></h3>
+
+
+All web-based database applications have three primary components: A web browser (or client), a web application server, and a database server.
+
+Web-based database applications rely on a database server, which provides the data for the application. The database server sometimes also provides business logic in the form of stored procedures. Stored procedures can offer significant performance advantages, especially in a multi-tiered architecture. In addition to database servers, other enterprise information system components include IMS databases, IBM® MQ messages, and CICS® records.
+
+The clients handle the presentation logic, which controls the way in which users interact with the application. In some cases, the client validates user-provided input. Web applications sometimes integrate Java™ applets into the client-side logic to improve the presentation layer.
+
+Web application servers manage the business logic. The business logic, typically written in Java, supports multitiered applications. The web application server can manage requests from a variety of remote clients. The web application layer might include JavaServer Pages (JSP) files, Java servlets, Enterprise JavaBeans (EJB) components, or web services.</div>
+
+<u><h3><div id="types">
+Types of web content</u></h3>
+
+
+Web content is the textual, visual, or aural content that is encountered as part of the user experience on websites. It may include—among other things—text, images, sounds, videos, and animations.
+
+
+Users connect their computers to web content via various layers of the internet
+In Information Architecture for the World Wide Web, Lou Rosenfeld and Peter Morville write, "We define content broadly as 'the stuff in your Web site.' This may include documents, data, applications, e-services, images, audio and video files, personal Web pages, archived e-mail messages, and more. And we include future stuff as well as present stuff.</div>
+
+<u><h3><div id="overview">
+Overview of http</u></h3>
+
+The Hypertext Transfer Protocol (HTTP) is an application layer protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resources that the user can easily access, for example by a mouse click or by tapping the screen in a web browser.
+
+Development of HTTP was initiated by Tim Berners-Lee at CERN in 1989 and summarized in a simple document describing the behavior of a client and a server using the first HTTP protocol version that was named 0.9.
+
+That first version of HTTP protocol soon evolved into a more elaborated version that was the first draft toward a far future version 1.0.
+
+Development of early HTTP Requests for Comments (RFCs) started a few years later and it was a coordinated effort by the Internet Engineering Task Force (IETF) and the World Wide Web Consortium (W3C), with work later moving to the IETF.
+
+HTTP/1 was finalized and fully documented (as version 1.0) in 1996. It evolved (as version 1.1) in 1997 and then its specifications were updated in 1999 and in 2014.
+
+Its secure variant named HTTPS is used by more than 76% of websites.
+
+HTTP/2 is a more efficient expression of HTTP's semantics "on the wire", and was published in 2015; it is used by more than 45% of websites; it is now supported by almost all web browsers (96% of users) and major web servers over Transport Layer Security (TLS) using an Application-Layer Protocol Negotiation (ALPN) extension where TLS 1.2 or newer is required.
+
+HTTP/3 is the proposed successor to HTTP/2; it is used by more than 20% of websites; it is now supported by many web browser (73% of users). HTTP/3 uses QUIC instead of TCP for the underlying transport protocol. Like HTTP/2, it does not obsolete previous major versions of the protocol. Support for HTTP/3 was added to Cloudflare and Google Chrome first,and is also enabled in Firefox.</div>
+
+<u><h3><div id="reqres">
+Http request-response</u></h3>
+
+HTTP messages are how data is exchanged between a server and a client. There are two types of messages: requests sent by the client to trigger an action on the server, and responses, the answer from the server.
+
+HTTP Requests
+
+Start line
+
+HTTP requests are messages sent by the client to initiate an action on the server. Their start-line contain three elements:
+
+An HTTP method, a verb (like GET, PUT or POST) or a noun (like HEAD or OPTIONS), that describes the action to be performed. For example, GET indicates that a resource should be fetched or POST means that data is pushed to the server (creating or modifying a resource, or generating a temporary document to send back).
+The request target, usually a URL, or the absolute path of the protocol, port, and domain are usually characterized by the request context. The format of this request target varies between different HTTP methods. It can be
+An absolute path, ultimately followed by a '?' and query string. This is the most common form, known as the origin form, and is used with GET, POST, HEAD, and OPTIONS methods.
+POST / HTTP/1.1
+GET /background.png HTTP/1.0
+HEAD /test.html?query=alibaba HTTP/1.1
+OPTIONS /anypage.html HTTP/1.0
+A complete URL, known as the absolute form, is mostly used with GET when connected to a proxy. GET https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages HTTP/1.1
+The authority component of a URL, consisting of the domain name and optionally the port (prefixed by a ':'), is called the authority form. It is only used with CONNECT when setting up an HTTP tunnel. CONNECT developer.mozilla.org:80 HTTP/1.1
+The asterisk form, a simple asterisk ('*') is used with OPTIONS, representing the server as a whole. OPTIONS * HTTP/1.1
+The HTTP version, which defines the structure of the remaining message, acting as an indicator of the expected version to use for the response.
+
+Headers
+
+HTTP headers from a request follow the same basic structure of an HTTP header: a case-insensitive string followed by a colon (':') and a value whose structure depends upon the header. The whole header, including the value, consist of one single line, which can be quite long.
+
+Many different headers can appear in requests. They can be divided in several groups:
+
+General headers, like Via, apply to the message as a whole.
+Request headers, like User-Agent or Accept, modify the request by specifying it further (like Accept-Language), by giving context (like Referer), or by conditionally restricting it (like If-None).
+Representation headers like Content-Type that describe the original format of the message data and any encoding applied (only present if the message has a body).
+
+
+Body
+
+
+The final part of the request is its body. Not all requests have one: requests fetching resources, like GET, HEAD, DELETE, or OPTIONS, usually don't need one. Some requests send data to the server in order to update it: as often the case with POST requests (containing HTML form data).
+
+Bodies can be broadly divided into two categories:
+
+Single-resource bodies, consisting of one single file, defined by the two headers: Content-Type and Content-Length.
+Multiple-resource bodies, consisting of a multipart body, each containing a different bit of information. This is typically associated with HTML Forms.
+
+HTTP Responses
+
+Status line
+
+The start line of an HTTP response, called the status line, contains the following information:
+
+The protocol version, usually HTTP/1.1.
+A status code, indicating success or failure of the request. Common status codes are 200, 404, or 302
+A status text. A brief, purely informational, textual description of the status code to help a human understand the HTTP message.
+A typical status line looks like: HTTP/1.1 404 Not Found.
+
+Headers
+
+HTTP headers for responses follow the same structure as any other header: a case-insensitive string followed by a colon (':') and a value whose structure depends upon the type of the header. The whole header, including its value, presents as a single line.
+
+Many different headers can appear in responses. These can be divided into several groups:
+
+General headers, like Via, apply to the whole message.
+Response headers, like Vary and Accept-Ranges, give additional information about the server which doesn't fit in the status line.
+Representation headers like Content-Type that describe the original format of the message data and any encoding applied (only present if the message has a body).
+
+Body
+
+
+The last part of a response is the body. Not all responses have one: responses with a status code that sufficiently answers the request without the need for corresponding payload (like 201 Created or 204 No Content) usually don't.
+
+Bodies can be broadly divided into three categories:
+
+Single-resource bodies, consisting of a single file of known length, defined by the two headers: Content-Type and Content-Length.
+Single-resource bodies, consisting of a single file of unknown length, encoded by chunks with Transfer-Encoding set to chunked.
+Multiple-resource bodies, consisting of a multipart body, each containing a different section of information. These are relatively rare.</div>
+<u><h3><div id="dynamic">
+Dynamic webpages</u></h3>
+
+A server-side dynamic web page is a web page whose construction is controlled by an application server processing server-side scripts. In server-side scripting, parameters determine how the assembly of every new web page proceeds, including the setting up of more client-side processing.
+
+
+Dynamic web page: example of server-side scripting (PHP and MySQL).
+A client-side dynamic web page processes the web page using JavaScript running in the browser as it loads. JavaScript can interact with the page via Document Object Model, or DOM, to query page state and modify it. Even though a web page can be dynamic on the client-side, it can still be hosted on a static hosting service such as GitHub Pages or Amazon S3 as long as there isn't any server-side code included.
+
+A dynamic web page is then reloaded by the user or by a computer program to change some variable content. The updating information could come from the server, or from changes made to that page's DOM. This may or may not truncate the browsing history or create a saved version to go back to, but a dynamic web page update using AJAX technologies will neither create a page to go back to, nor truncate the web browsing history forward of the displayed page. Using AJAX, the end user gets one dynamic page managed as a single page in the web browser while the actual web content rendered on that page can vary. The AJAX engine sits only on the browser requesting parts of its DOM, the DOM, for its client, from an application server.
+
+DHTML is the umbrella term for technologies and methods used to create web pages that are not static web pages, though it has fallen out of common use since the popularization of AJAX, a term which is now itself rarely used. Client-side-scripting, server-side scripting, or a combination of these make for the dynamic web experience in a browser.</div>
+<u><h3><div id="dynamic1">
+Dynamic web Image</u></h3>
+<img src="image1.jpeg"></div>
+<u><h3><div id="appln">
+Application servers</u></h3>
+
+Application servers are system software upon which web applications or desktop applications run.
+
+Application servers consist of
+
+web server connectors,
+computer programming languages,
+runtime libraries,
+database connectors, and
+the administration code needed to deploy, configure, manage, and connect these components on a web host.
+An application server runs behind a web Server (e.g. Apache or Microsoft Internet Information Services (IIS)) and (almost always) in front of an SQL[citation needed] database (e.g. PostgreSQL, MySQL, or Oracle). Web applications are computer code which run atop application servers and are written in the language(s) the application server supports and call the runtime libraries and components the application server offers.
+
+Many application servers exist. The choice impacts the cost, performance, reliability, scalability, and maintainability of a web application.
+
+Proprietary application servers provide system services in a well-defined but proprietary manner. The application developers develop programs according to the specification of the application server. Dependence on a particular vendor is the drawback of this approach.
+
+An opposite but analogous case is the Java EE platform. Java EE application servers provide system services in a well-defined, open, industry standard. The application developers develop programs according to the Java EE specification and not according to the application server. A Java EE application developed according to Java EE standard can be deployed in any Java EE application server making it vendor-independent.</div>
+<u><h3><div id="security">
+Web Security</u></h3>
+
+Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.
+
+Websites and web applications are just as prone to security breaches as physical homes, stores, and government locations. Unfortunately, cybercrime happens every day, and great web security measures are needed to protect websites and web applications from becoming compromised.
+
+That’s exactly what web security does – it is a system of protection measures and protocols that can protect your website or web application from being hacked or entered by unauthorized personnel. This integral division of Information Security is vital to the protection of websites, web applications, and web services. Anything that is applied over the Internet should have some form of web security to protect it.</div>
+</pre>
+<div id="getvspost">
+<table border="1"><tr><th>GET</th>
+<th>POST</th>
+<tr><td>
+Only limited amount of data can be sent because data is sent in header.</td>
+<td>
+Large amount of data can be sent because data is sent in body.</td>
+<tr><td>
+Get request is not secured because query string appended in the URL bar.</td><td>
+Post request is secured because data is not exposed in the URL bar.</td>
+<tr><td>
+Get request can be bookmarked</td><td>
+Post request cannot be bookmarked.</td>
+<tr><td>
+A Get request is often cacheable.</td><td>
+A Post request can hardly cacheable.</td>
+<tr><td>
+Get request is more efficient and used more than post.</td><td>
+Post request is less efficient and used less than Get.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+	
+

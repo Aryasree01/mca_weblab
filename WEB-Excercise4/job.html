@@ -6,16 +6,16 @@
 <fieldset>
 <legend>Personal Details</legend>
 <table><tr><th>Name</th>
-<td><input type="text"></td></tr>
+<td><input type="text" name="name"></td></tr>
 <tr><th>Age</th>
-<td><input type="number"></td></tr>
+<td><input type="number" name="age"></td></tr>
 <tr><th>DOB</th>
-<td><input type="date"></td></tr>
+<td><input type="date" name="dob"></td></tr>
 <tr><th>Gender</th>
-<td><input type="radio" name="gender" >Male<br><input type="radio" name="gender">Female
-<br><input type="radio" name="gender" >Others
+<td><input type="radio" name="gender" value="m">Male<br><input type="radio" name="gender" value="f">Female
+<br><input type="radio" name="gender" value="o">Others
 </td></tr>
-<tr><th>Address</th><td><textarea rows="3" cols="50"></textarea></td></tr>
+<tr><th>Address</th><td><textarea name="address" rows="3" cols="50"></textarea></td></tr>
 <tr><th>State</th><td>
 <select name="state">
 <option value="kerala">Kerala</option>
@@ -24,21 +24,21 @@
 <option value="rajastan">Rajastan</option>
 </select></td></tr>
 <tr><th>Email</th>
-<td><input type="email"></td></tr>
+<td><input type="email" name="email"></td></tr>
 <tr><th>Phone</th>
-<td><input type="number"></td></tr>
+<td><input type="number" name="phone"></td></tr>
 </table>
 </fieldset><br>
 <table>
 <tr><th>Educational Qualification</th>
-<td><input type="radio" name="edu" >sslc<br><input type="radio" name="edu">plus two
-<br><input type="radio" name="edu" >ug<br>
-<input type="radio" name="edu" >pg<tr></tr>
+<td><input type="radio" name="edu" value="sslc">sslc<br><input type="radio" name="edu" value="plus two">plus two
+<br><input type="radio" name="edu" value="ug">ug<br>
+<input type="radio" name="edu" value="pg">pg<tr></tr>
 </td></tr>
-<tr><th>Experience</th><td><textarea rows="4" cols="50"></textarea></td></tr><tr></tr>
-<tr><th>Languages Known</th><td><input type="checkbox">English
-<br><input type="checkbox">Hindi
-<br><input type="checkbox">Malayalam</td></tr></table><br>
+<tr><th>Experience</th><td><textarea rows="4" cols="50" name="experience"></textarea></td></tr><tr></tr>
+<tr><th>Languages Known</th><td><input type="checkbox" name="lang1" value="english">English
+<br><input type="checkbox" name="lang2" value="hindi">Hindi
+<br><input type="checkbox" name="lang3" value="malayalam">Malayalam</td></tr></table><br>
 <center>
 <input type="submit" value="submit">&nbsp;&nbsp;
 <input type="reset"></center>
